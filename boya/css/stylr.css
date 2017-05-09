@@ -1,0 +1,239 @@
+/*公共样式*/
+*
+{
+	margin: 0;/*外边距清零*/
+	padding: 0;/*内边距清零*/
+
+}
+ul ,li{
+	list-style: none;/*消除点点*/
+	
+
+}
+a{
+	text-decoration:none;/*消除下滑线*/
+}
+body{
+	font-family: "microsoft yaHei","simsun"/*字体选择 微软雅黑，宋体*/
+
+}
+.cl{
+clear:both;/*清除浮动*/
+}
+/*版心*/
+.inner-c {
+	margin:0 auto;/*外边距自动居中*/
+	width:1000px;
+
+}
+/*header头部*/
+.header{
+	height: 58px;/*高*/
+	background: #191d3a;/*背景颜色*/
+
+}
+.header .logo{
+ padding-left: 12px;/*内边距左偏移*/
+ float: left;/*左浮动*/
+ margin-right: 39px;/*logo右外边距*/
+}
+.header .nav {
+	float: left;
+	width:607px;/*导航条总宽*/
+	height: 58px;
+
+}
+.header .nav ul li{
+	float: left;
+	border-left:1px solid #252947;/*li1像素实线*/
+	width:100px;
+	height:58px;
+}
+.header .nav ul li.last {
+           border-left: 1px solid #252947;/*投资者关系li1像素实线*/
+}
+.header .nav ul li a{
+	display: block;/*转换为块元素能设置宽度和高度*/
+	width: 100px;
+	height: 58px;
+	text-align:center;/*字体居中*/
+	line-height: 58px;/*行高*/
+	color:#818496;/*字体颜色*/
+	font-size: 14px;/*字体大小*/
+}.header .nav ul li a:hover {
+	background: #252948;/*光标停留背景变色*/
+color:#e2e4ed;/*光标停留字体变色*/
+font-weight:bold;/*字体变粗*/
+}
+.header .jrwm {
+	float:left;/*浮动*/
+	padding-top: 12px;/*内边距离上12px*/
+	padding-left: 48px;/*内边距向左浮动48px*/
+}
+.header .jrwm a{
+	display:block;/*转换为块元素*/
+	width: 98px;
+	height: 32px;
+	background:#38b774;
+	border:1px solid #38b774;
+	border-radius:4px; /*圆角*/
+	line-height: 32px;
+	text-align:center;/*字宽居中*/
+	font-size: 14px;/*字体大小*/
+	color:#ffffff;/*字体变白*/
+}
+.header .jrwm a:hover {
+background: #48c784;/*光标停留颜色*/
+}
+/*banner  广告*/
+.banner {
+	height:465px;/*总高*/
+	background: url(../images/banner.jpg) no-repeat center top;/*引入图片 不平铺 居中 上*/
+
+}
+
+/*展示窗口*/
+.content{
+	padding-top: 50px;
+	background: url(../images/indexmainbg.jpg) no-repeat center bottom;/*引入图片 不平铺 居中 下*/
+	height:800px;
+
+}
+.content .product {
+	height:229px;
+	border-bottom:1px solid #dbe1e7;/*边界下实线*/
+}
+.content .product ul li {
+	float:left; /*浮动*/
+	width: 218px;
+	height: 229px;
+	margin-right:43px;
+
+}
+.content .product ul li.last{
+	margin-right: 0;
+	width:217px;
+
+}
+.content .product ul li p img{
+	width:100%;
+	height:130px;
+}
+.content .product ul li h3 {
+	text-align:center;
+	line-height:38px;/*行高*/
+	font-size:14px;
+	font-weight:bold;/*字体变粗*/
+
+	
+
+
+
+} 
+.content .product ul li p.play{
+	text-align:center; /*宽居中*/
+}
+
+.content .product ul li p.play a{
+	font-size:12px;/*字体大小*/
+	line-height:12px;/*行高*/
+	color:#38b774;
+	padding-right: 10px;
+	background:url('../images/sanjiaoxing.png') no-repeat right center;/*不平铺 右边框居中 */
+}
+/*infp*/
+.content.info{
+	padding-top: 53px
+}
+.content .info .boyanews{
+	float:left;
+	width:500px;
+	height:314px;
+	background:url('../images/bynewsbg.jpg')no-repeat ;
+	padding-top: 111px;
+}
+.content .info .boyajobs {
+	float:left;
+	width:500px;
+	height:314px;
+	background:url('../images/byhrbg3.jpg') no-repeat;
+
+}
+.content .info .boyanews ul {
+	padding:0 20px;
+}
+.content .info .boyanews ul li{
+	line-height:50px;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+}
+.content .info .boyanews ul li span {
+	color:#afbecf;
+	margin-right:22px;
+}
+.content .info .boyanews ul li a{
+	color:#444866;
+	font-size:14px;	
+}
+.content .info .boyanews ul li a:hover{
+	color:orange;
+}
+.content .info .boyajobs .title {
+	padding-top:40px;
+	padding-left:78px;
+}
+.content .info .boyajobs .title h3{
+	width: 119px;
+	height: 51px;
+	background:url('../images/zczp.png') no-repeat;
+	text-indent:-9999em;
+}
+.content .info .boyajobs h4{
+	padding: 18px  0px 0px 20px ;
+	/*padding-left: 20px;*/
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+}.content .info .boyajobs ul{
+	padding-left:20px;
+	width: 305px;	
+}
+.content .info .boyajobs ul li{
+	border-bottom:1px solid #6fdea3;
+	line-height:37px;
+
+ }
+ .content .info .boyajobs ul li a{
+ 	font-size:12px;
+ 	color:#ffffff;
+ }
+/*footer*/
+.footer {
+	height:91px;
+	background:#191d3a;
+}
+.footer .inner-c .left-part {
+	float:left;
+	width: 300px;
+	height: 91px;
+	line-height: 91px;
+}
+.footer .inner-c .left-part a{
+color:gray;
+font-size:12px;
+line-height:91px;
+}
+.footer .inner-c .right-part {
+	float:left;
+	width:700px;
+	height:91px;
+	text-align:right;/*文字靠右*/
+	color:gray;
+	font-size:12px;
+}
+.footer .inner-c .right-part .jinghui{
+	width: 40px;
+	position:relative;/*相对定位*/
+	top:20px;
+
+}
